@@ -1,0 +1,153 @@
+/* Reset and base styles  */
+html,
+body {
+  border: none;
+  scroll-behavior: smooth;
+  background-color: hsl(0, 0%, 100%);
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-style: normal;
+  font-weight: 500;
+  text-decoration: none;
+  font-family: "Manrope";
+}
+
+/* Set background for Hero element */
+
+.Hero {
+  background-image: url("../../public/mainBackground.png");
+  background-size: cover;
+  background-position-y: 60%;
+}
+
+/* Set decorating images for info rows on home page */
+
+.homeInfoCard {
+
+}
+
+.homeInfoCardTwoCopy {
+  height: 100%;
+  background-image: url("../../public/salonHomeInfoCards/combCardTwo.png");
+  background-size: cover;
+}
+
+.homeInfoCardOne {
+  height: 100%;
+  background-image: url("../../public/salonHomeInfoCards/combCardOne.png");
+  background-size: cover;
+  background-position-y: 60%;
+}
+
+.homeInfoCardTwo {
+  height: 100%;
+  background-image: url("../../public/salonHomeInfoCards/combCardTwo.png");
+  background-size: cover;
+  background-position-x: 60%;
+}
+
+/* Set decorating images for hero components on all sub-pages */
+
+.smallHero {
+  background-image: url("../../public/mainBackground.png");
+  background-size: cover;
+  background-position-y: 40%;
+}
+
+/* Add secondary font */
+
+@font-face {
+  font-family: Diana;
+  src: url("../../public/Princess-Diana.ttf");
+}
+
+/* Add media queries to resize some elements through entire website */
+
+@media only screen and (max-width: 960px) {
+  .homeInfoCard {
+    width: 100%;
+  }
+  .homeInfoCardOne {
+    width: 100%;
+  }
+  .homeInfoCardTwo {
+    width: 100%;
+  }
+  .homeInfoCardTwoCopy {
+    width: 100%;
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .homeInfoCard {
+    width: 100%;
+    height: 20rem;
+  }
+  .homeInfoCardOne {
+    width: 100%;
+    height: 20rem;
+    padding-top: 20rem;
+  }
+  .homeInfoCardTwo {
+    width: 100%;
+    height: 20rem;
+    padding-top: 20rem;
+  }
+  .homeInfoCardTwoCopy {
+    width: 100%;
+    display: none;
+    height: 20rem;
+    padding-top: 20rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .homeInfoCard {
+    width: 100%;
+    height: 21.5rem;
+  }
+  .homeInfoCardOne {
+    width: 100%;
+    height: 21.5rem;
+    padding-top: 21.5rem;
+  }
+  .homeInfoCardTwo {
+    width: 100%;
+    height: 21.5rem;
+    padding-top: 21.5rem;
+  }
+  .homeInfoCardTwoCopy {
+    width: 100%;
+    display: none;
+    height: 21.5rem;
+    padding-top: 21.5rem;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .homeInfoCard {
+    width: 100%;
+    height: 23.5rem;
+  }
+  .homeInfoCardOne {
+    width: 100%;
+    height: 23.5rem;
+    padding-top: 23.5rem;
+  }
+  .homeInfoCardTwo {
+    width: 100%;
+    height: 23.5rem;
+    padding-top: 23.5rem;
+  }
+  .homeInfoCardTwoCopy {
+    width: 100%;
+    display: none;
+    height: 23.5rem;
+    padding-top: 23.5rem;
+  }
+}
